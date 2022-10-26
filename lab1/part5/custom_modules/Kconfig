@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: GPL-2.0
+
+menuconfig CUSTOM_MODULES
+	bool "Rust custom modules"
+	depends on RUST
+	help
+	  You can build sample Rust kernel code here.
+
+	  If unsure, say N.
+
+if CUSTOM_MODULES
+
+config RUST_MYMEM
+	tristate "memory driver"
+	help
+	  This option builds the Rust mymem module.
+
+	  To compile this as a module, choose M here:
+	  the module will be called rust_minimal.
+
+	  If unsure, say N.
+
+config RUST_MYMEM_BENCHMARK
+	tristate "Mymem benchmark"
+	help
+	  This option builds the Rust mymem benchmark.
+
+	  To compile this as a module, choose M here:
+	  the module will be called rust_print.
+
+	  If unsure, say N.
+
+endif # CUSTOM_MODULES
