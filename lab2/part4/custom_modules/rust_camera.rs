@@ -1,7 +1,7 @@
 use kernel::prelude::*;
 use kernel::sync::smutex::Mutex;
 
-use bindings;
+use kernel::bindings;
 
 module! {
     type: RustCamera,
