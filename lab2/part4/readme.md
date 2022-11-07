@@ -1,5 +1,5 @@
 # Usage
-Put the `custom_modules` folder under `linux/samples/rust` then add the following two lines in `linux/samples/Makefile` and `linux/samples/rust/Kconfig`
+Put the `custom_modules` folder under `linux/samples/rust` then add the following two lines in `linux/samples/rust/Makefile` and `linux/samples/rust/Kconfig`
 
 ```
 # Makefile
